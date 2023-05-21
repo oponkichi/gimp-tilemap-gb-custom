@@ -390,7 +390,8 @@ int32_t gbr_export_tileset_calc_dimensions(gbr_record * p_gbr, image_data * p_im
 bool gbr_export_extract_tiles_from_image(gbr_record * p_gbr, image_data * p_image, uint16_t gb_mode, uint16_t ignore_palette_errors) {
 
     uint16_t  tile_size = p_gbr->tile_data.width * p_gbr->tile_data.height;
-    uint8_t   tile_buf[tile_size];
+    //uint8_t   tile_buf[tile_size];
+    uint8_t*   tile_buf = malloc(tile_size);
     uint16_t  t_idx, img_idx;
     uint16_t  tile_id = 0;
     uint32_t  tile_id_x, tile_id_y;
@@ -419,13 +420,17 @@ bool gbr_export_extract_tiles_from_image(gbr_record * p_gbr, image_data * p_imag
 
             // Save the tile
             if (!gbr_tile_set_buf(&tile_buf[0], p_gbr, tile_id,
-                                  gb_mode, ignore_palette_errors))
+                gb_mode, ignore_palette_errors))
+            {
+                free(tile_buf);
                 return false;
+            }
 
             tile_id++;
         } // end for: tile_id_x
     } // end for: tile_id_y
 
+    free(tile_buf);
     return true;
 }
 

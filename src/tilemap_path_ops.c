@@ -123,7 +123,8 @@ bool matches_extension(char * filename, char * extension) {
     if (strlen(filename) >= strlen(extension)) {
         char * str_ext = filename + (strlen(filename) - strlen(extension));
 
-        return (strncasecmp(str_ext, extension, strlen(extension)) == 0);
+        //return (strncasecmp(str_ext, extension, strlen(extension)) == 0);
+        return (_stricmp(str_ext, extension) == 0);
     }
     else
         return false;

@@ -361,7 +361,8 @@ int32_t gbr_tile_copy_to_image(image_data * p_image, gbr_record * p_gbr,
     int32_t image_offset;
     int32_t image_copy_end;
     int16_t row;
-    uint8_t tile_row[p_gbr->tile_data.width];
+    //uint8_t tile_row[p_gbr->tile_data.width];
+    uint8_t* tile_row = malloc(p_gbr->tile_data.width);
     // int16_t c;
     // uint8_t temp_pixel;
 
@@ -389,24 +390,28 @@ int32_t gbr_tile_copy_to_image(image_data * p_image, gbr_record * p_gbr,
     // Make sure the destination buffer is ok
     if (!p_image->p_img_data) {
         log_verbose("gbr_tile_copy_to_image(): dest buffer is NULL\n");
+        free(tile_row);
         return false;
     }
 
     // Make sure there is enough data for a complete tile in the source tile buffer
     if ((tile_size * tile_index) > p_gbr->tile_data.tile_data_size) {
         log_verbose("gbr_tile_copy_to_image(): source buffer too small %d x %d > %d\n", tile_size, tile_index, p_gbr->tile_data.tile_data_size);
+        free(tile_row);
         return false;
     }
 
     // Make sure there is enough room in the destination image for the tile
     if (image_copy_end > p_image->size) {
         log_verbose("gbr_tile_copy_to_image(): Not enough room for tile in dest image: %d > %d\n", image_copy_end, p_image->size);
+        free(tile_row);
         return false;
     }
 
     // TODO: support more than 1 BPP in destination images?
     if (p_image->bytes_per_pixel != 1) {
         log_verbose("gbr_tile_copy_to_image(): BPP is != 1 (%d)\n", p_image->bytes_per_pixel);
+        free(tile_row);
         return false;
     }
 
@@ -447,5 +452,6 @@ int32_t gbr_tile_copy_to_image(image_data * p_image, gbr_record * p_gbr,
 
     }
 
+    free(tile_row);
     return true;
 }

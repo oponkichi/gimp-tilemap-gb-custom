@@ -28,7 +28,7 @@ const uint16_t tile_flip_bits[] = {
 void tile_free(tile_data * p_tile) {
 
     if (p_tile->p_img_raw)
-        free(p_tile->p_img_raw);
+        _aligned_free(p_tile->p_img_raw);
 
     p_tile->p_img_raw = NULL;
 }
@@ -66,7 +66,7 @@ tile_map_entry tile_register_new(tile_data * p_src_tile, tile_set_data * tile_se
 
     int             h;
     tile_map_entry  new_map_entry;
-    tile_data     * new_tile;
+    tile_data     * new_tile = 0;
 
     // Default status to found
     new_map_entry.status = TILE_ID_OK;

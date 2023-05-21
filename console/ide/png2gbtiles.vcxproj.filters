@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="console">
+      <UniqueIdentifier>{8d47aa77-6ad4-4655-ab48-d033a2349bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\src">
+      <UniqueIdentifier>{1ac1c3e9-7244-43b9-97cb-2c0492ddd805}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\console_export_imagefile.c">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\console_import_imagefile.c">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\console_main.c">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\image_load.c">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lodepng\lodepng.c">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_gbr_import.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_gbr_ops.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_rom_bin.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_tilemap.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\options.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\palette.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rom_utils.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tilemap_error.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tilemap_format_gbdk_c_source.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tilemap_io.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tilemap_path_ops.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tilemap_tiles.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\color_space.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\format_snesgb_2bpp.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hash.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\image_remap.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_gbm.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_gbm_export.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_gbm_file_utils.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_gbm_import.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_gbm_ops.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_gbr.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_gbr_export.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lib_gbr_file_utils.c">
+      <Filter>ソース ファイル\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\console_export_imagefile.h">
+      <Filter>console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\console_import_imagefile.h">
+      <Filter>console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\image_load.h">
+      <Filter>console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lodepng\lodepng.h">
+      <Filter>console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_gbr_import.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_gbr_ops.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_rom_bin.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_tilemap.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\logging.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\options.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\palette.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\rom_utils.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tilemap_error.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tilemap_format_gbdk_c_source.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tilemap_io.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tilemap_path_ops.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tilemap_tiles.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win_aligned_alloc.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\color_space.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\format_snesgb_2bpp.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hash.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\image_info.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\image_remap.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_gbm.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_gbm_export.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_gbm_file_utils.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_gbm_import.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_gbm_ops.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_gbr.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_gbr_export.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lib_gbr_file_utils.h">
+      <Filter>ソース ファイル\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\Makefile.am">
+      <Filter>ソース ファイル\src</Filter>
+    </None>
+    <None Include="..\..\src\lib_gbr.h.gch">
+      <Filter>ソース ファイル\src</Filter>
+    </None>
+  </ItemGroup>
+</Project>
